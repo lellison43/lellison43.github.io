@@ -1,0 +1,168 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+/* Set global font styles and set body background color*/
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5; 
+  background-color: #eee;
+}
+
+
+/* Don't use DIV's! (unless absolutely necessary)*/
+div {background-color: red;}
+
+
+/* Container Styles 
+	Note: If you want to limit the width of the web page's content so it doesn't go edge to edge, you can add one div with an id of "container". Nest the container div immediately inside the body tags.
+*/
+#container {
+	width: 60%; /* sets the width of the content */
+	margin: 0 auto; /* centers the content horizontally */
+	background-color: #CCC; /* this should overwrite the red background color on the DIV */
+}
+
+
+
+/* Main styles */
+main {
+	padding: 10px;
+}
+
+
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+}
+
+header h1 {
+	padding: 10px;
+}
+
+
+
+/* Content styles */
+section, aside {
+	background-color: #ddd;
+	margin-bottom: 10px;
+	padding: 10px;
+	}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 15px;
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+ul, ol {
+  padding-left: 20px; /* Add padding to the left of lists */
+  margin: 10px 0; /* Add top and bottom margin to lists */
+  text-decoration: none;
+}
+
+ul li, ol li {
+  margin-bottom: 5px; /* Add bottom margin to list items */
+}
+
+ul li a, ol li a {
+	text-decoration: none;
+	}
+
+
+/* image styles 
+	-- You can modify these image styles if needed
+*/
+img {
+  width: 10%; /* Set the width of the image to 50% of its containing element */
+  height: auto; /* Ensure the height adjusts proportionally to maintain the aspect ratio */
+  /* float: left; Allow content to flow around the right side of the image */
+  margin-right: 20px; /* Add some space between the image and the surrounding text */
+  /* margin-bottom: 20px;  Add some space below the image */
+}
+
+
+
+/* Table Styles */
+table {
+  width: 90%; /* Make the table span the full width of its container */
+  border-collapse: collapse; /* Collapse borders between table cells */
+  margin: 20px auto auto; /* Add some spacing above the table */
+}
+
+th, td {
+  text-align: left; /* Align text to the left in table headers and cells */
+  padding: 8px; /* Add padding inside table cells */
+  border: 1px solid #ddd; /* Add a solid border around each cell */
+}
+
+th {
+  background-color: #f2f2f2; /* Light grey background for table headers */
+  color: #333; /* Darker text color for headers */
+}
+
+td {
+	background-color: #D2D2D2;
+	}
+
+tr:hover td{
+  background-color: #f5f5f5; /* Add a hover effect for table rows */
+}
+
+
+
+
+/* Navigation styles */
+nav {
+  background-color: #555;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+nav a:hover {
+  color: #aaa;
+}
+
+
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
